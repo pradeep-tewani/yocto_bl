@@ -10,7 +10,7 @@ inherit update-rc.d
 S = "${WORKDIR}"
 
 INITSCRIPT_NAME = "sysvtest"
-INITSCRIPT_PARAMS = "start 60 2 3 4 5 . stop 01 0 1 6"
+INITSCRIPT_PARAMS = "start 60 2 3 4 5 . stop 01 0 1 6 ."
 
 do_install() {
 	install -d ${D}${sysconfdir}/init.d
